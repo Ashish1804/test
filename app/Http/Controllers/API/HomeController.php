@@ -146,7 +146,7 @@ class HomeController extends Controller
             }
 
 
-            $user_id = auth()->id();
+            $user_id = auth()->id(); 
             $product_id = $request->product_id;
 
             $check = Cart::query()->where(['user_id' => $user_id, 'product_id' => $product_id ])->first();
